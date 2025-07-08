@@ -1,4 +1,5 @@
 Hi 
 Hello
-Good Morning
+Good Mrng
 Good Night
+Bye
