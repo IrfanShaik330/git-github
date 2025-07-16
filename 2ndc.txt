@@ -20,7 +20,7 @@ class Program
  
             SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
             smtp.Credentials = new NetworkCredential(senderEmail, appPassword);
-            smtp.EnableSsl = true;
+            smtp.EnableSsl = true
  
             smtp.Send(message);
             Console.WriteLine("✅ Email sent successfully.");
