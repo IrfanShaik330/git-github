@@ -1,0 +1,30 @@
+using System;
+using System.Net;
+using System.Net.Mail;
+ 
+class Program
+{
+    static void Main(string[] args)
+    {
+        try
+        {
+ 
+            MailMessage mailMessage = new MailMessage();
+            mailMessage.From = new MailAddress("jagadeeshpindiga@gmail.com");
+            mailMessage.To.Add("lagishettys@dnb.com");
+            mailMessage.Subject = "Subject";
+            mailMessage.Body = "This is a test email.";
+ 
+            SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
+            smtpClient.Credentials = new NetworkCredential("jagadeeshpindiga@gmail.com", "xxxxxxxxxxxxxxxx");
+            smtpClient.EnableSsl = true;
+ 
+            smtpClient.Send(mailMessage);
+            Console.WriteLine("Email Sent Successfully.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error: " + ex.Message);
+        }
+    }
+}
