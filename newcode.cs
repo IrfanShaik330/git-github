@@ -2,9 +2,9 @@ using System;
 using System.Net;
 using System.Net.Mail;
  
-class Program
+
 {
-    static  Main(string[] args)
+    
     {
         try
         {
