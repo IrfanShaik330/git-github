@@ -4,7 +4,7 @@ using System.Net.Mail;
  
 class Program
 {
-    static void Main(string[] args)
+    static  Main(string[] args)
     {
         try
         {
