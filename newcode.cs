@@ -18,7 +18,7 @@ using System.Net.Mail;
             message.Subject = "SMTP Test from .NET App";
             message.Body = "Hi! This is a test email sent via Gmail SMTP using C#.";
  
-            SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
+            SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587)
             smtp.Credentials = new NetworkCredential(senderEmail, appPassword);
             smtp.EnableSsl = true
  
