@@ -27,7 +27,7 @@ using System.Net.Mail;
         }
         catch (Exception ex)
         {
-            Console.WriteLine("❌ Error sending email: " + ex.Message);
+            Console.WriteLine("❌ Error sending email: " + ex.Message)
         }
     }
 }
